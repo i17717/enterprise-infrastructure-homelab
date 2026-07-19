@@ -7,10 +7,10 @@ Deploy a Rocky Linux server inside VirtualBox.
 ## VM Specifications
 
 **CPU**
-2 vCPUs
+1 vCPUs
 
 **Memory**
-4096 MB
+2.48 MB
 
 **Disk**
 30 GB dynamically allocated
