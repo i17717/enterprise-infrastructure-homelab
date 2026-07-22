@@ -1,5 +1,7 @@
 # Enterprise Infrastructure Homelab
 
+
+<pre>
 A production-inspired enterprise infrastructure built on
 Rocky Linux.
 
@@ -11,3 +13,5 @@ documentation.
 
 The project follows realistic IT department scenarios
 and evolves as if supporting a growing company.
+
+</pre>

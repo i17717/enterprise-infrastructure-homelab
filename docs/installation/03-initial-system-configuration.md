@@ -50,6 +50,18 @@ Verify the change:
 
 <img align="center" src="../../screenshots/new-hostname.png" alt="Rocky Linux Installation" width="700" />
 
+### Why Hostnames Matter
+
+A descriptive hostname simplifies server administration and helps identify systems in:
+
+- SSH sessions
+- System logs
+- Monitoring platforms
+- DNS records
+- Automation tools
+
+For this project, the hostname **`ei-core`** represents the primary infrastructure server.
+
 ## 3. Create an Administrative User
 
 Create a dedicated administrator account instead of using `root` for daily tasks.
@@ -78,8 +90,6 @@ Verify group membership:
 id lilli
 ```
 
-<img align="center" src="../../screenshots/group membership.png" alt="Rocky Linux Installation" width="700" />
-
 ## 4. Configure sudo Access
 
 Switch to the new user:
@@ -104,7 +114,7 @@ root
 
 ## 5. Verify Network Connectivity
 
-Display network interfaces:
+Display network interfaces and their assigned IP addresses:
 
 ```bash
 ip addr
@@ -130,6 +140,10 @@ ping -c 4 google.com
 
 <img align="center" src="../../screenshots/network connectivity.png" alt="Rocky Linux Installation" width="700" />
 
+<br/>
+
+> **Note:** If the IP ping succeeds but the domain ping fails, the server has Internet connectivity but DNS is not configured correctly.
+
 ## 6. Verify Time Settings
 
 Display current date, time, and synchronization status.
@@ -138,7 +152,7 @@ Display current date, time, and synchronization status.
 timedatectl
 ```
 
-(Optional) Configure the timezone:
+Configure the timezone:
 
 ```bash
 timedatectl set-timezone Africa/Khartoum

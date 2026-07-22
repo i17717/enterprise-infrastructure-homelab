@@ -47,6 +47,8 @@ Install all available package updates:
 sudo dnf update
 ```
 
+> **Note:** On Rocky Linux, `dnf update` and `dnf upgrade` perform the same operation and can be used interchangeably.
+
 ## 4. Reboot the System
 
 Restart the server if a new kernel or critical system packages were updated.
@@ -70,3 +72,5 @@ Confirm that no updates remain:
 ```bash
 sudo dnf check-update
 ```
+
+If no packages are listed, the system is fully up to date.
