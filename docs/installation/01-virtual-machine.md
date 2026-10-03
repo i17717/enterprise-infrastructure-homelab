@@ -21,6 +21,3 @@ Bridged Adapter
 
 **Operating System**
 Rocky Linux 10 Minimal
-
-**Boot Mode**
-UEFI
